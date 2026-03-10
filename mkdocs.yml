@@ -1,0 +1,85 @@
+# ============================================================
+# Protections for Elections — Election Security Research Platform
+# ============================================================
+# Municipal enforcement of 18 USC 592 (federal troops at polling places)
+# Test instance — isolated from live elections-protections site
+
+site_name: "Election Security Research"
+site_url: "https://election-security-research.netlify.app"
+site_description: "Municipal ordinance campaign for 18 USC 592 enforcement — 50-state legal analysis with tiered viability ratings"
+site_author: "Policy Research Platform"
+repo_url: "https://github.com/jameshodlen/policy-election-security"
+repo_name: "jameshodlen/policy-election-security"
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Home: index.md
+  - Legal Foundation:
+    - Overview: legal-foundation/index.md
+    - Federal Law: legal-foundation/federal-law.md
+    - State Authority: legal-foundation/state-authority.md
+  - State Guides:
+    - Overview: state-guides/index.md
+  - Toolkit:
+    - Overview: toolkit/index.md
+    - For Voters: toolkit/voters.md
+    - For Organizers: toolkit/organizers.md
+    - For Officials: toolkit/officials.md
+  - Methodology: methodology.md
+  - About: about.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - pymdownx.tabbed:
+      alternate_style: true
+  - footnotes
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - abbr
+  - attr_list
+  - def_list
+  - md_in_html
+  - pymdownx.snippets:
+      auto_append:
+        - docs/includes/abbreviations.md
+
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-\.]+'
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: "Policy research for public benefit"
