@@ -47,6 +47,7 @@ nav:
     - State Authority: legal-foundation/state-authority.md
   - State Guides:
     - Overview: state-guides/index.md
+    - Illinois: state-guides/illinois.md
   - Toolkit:
     - Overview: toolkit/index.md
     - For Voters: toolkit/voters.md
